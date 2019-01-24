@@ -25,7 +25,11 @@ public class LoginServlet extends HttpServlet {
             User user = ls.getUserByUsernameAndPwd(username,password);
             //根据返回的对象，判断提示信息的内容
             if (user == null) {
-                response.getWriter().println("账号密码不存在");
+                //response.getWriter().println("账号密码不存在");
+                //把错误信息放入request域对象中
+                request.setAttribute("msg","登录失败");
+                //使用请求转发跳转到login.jsp
+                request.getRequestDispatcher("/login.jsp").forward(request,response);
             }else {
                 response.getWriter().println(user.getUsername()+":欢迎回来");;
             }
