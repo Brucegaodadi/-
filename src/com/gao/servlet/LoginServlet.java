@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
         LoginService ls = new LoginService();
         try {
             //校验验证码
-            if (yzm=="" || yzm.trim().length() == 0){
+            if (yzm == "" || yzm.trim().length() == 0){
                 //把错误信息放入request
                 request.setAttribute("msg","请输入验证码");
                 //请求转发

@@ -141,7 +141,7 @@
                             <input type="text" class="form-control" name= "yzm" id="inputPassword3" placeholder="请输入验证码">
                         </div>
                         <div class="col-sm-3">
-                            <img src="./image/captcha.jhtml"/>
+                            <img src="/day0901_war_exploded/code"/>
                         </div>
 
                     </div>

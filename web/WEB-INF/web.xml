@@ -14,4 +14,16 @@
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
+
+    <!--配置验证码-->
+    <servlet>
+        <servlet-name>CodeServlet</servlet-name>
+        <servlet-class>com.gao.servlet.CodeServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>CodeServlet</servlet-name>
+        <url-pattern>/code</url-pattern>
+    </servlet-mapping>
 </web-app>
